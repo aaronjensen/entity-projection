@@ -1,4 +1,4 @@
-require_relative 'automated_init'
+require_relative "automated_init"
 
 context "Entity Name Macro" do
   entity = EntityProjection::Controls::Entity::New.example

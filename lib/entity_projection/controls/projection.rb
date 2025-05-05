@@ -40,11 +40,11 @@ module EntityProjection
           include Controls::Message
 
           apply SomeMessage do |some_message|
-            entity.some_attribute = 'some attribute value set by apply block'
+            entity.some_attribute = "some attribute value set by apply block"
           end
 
           def apply(event_data)
-            event_data.data = 'some data value set by apply method'
+            event_data.data = "some data value set by apply method"
           end
         end
       end

@@ -1,7 +1,7 @@
-require_relative 'interactive_init'
-require 'messaging/postgres'
+require_relative "interactive_init"
+require "messaging/postgres"
 
-logger = Log.get('Projection Test')
+logger = Log.get("Projection Test")
 
 logger.info "Starting", tag: :test
 
@@ -91,7 +91,7 @@ withdrawn = Events::Withdrawn.build({
 
 account_id = Identifier::UUID::Random.get
 
-stream_name = Messaging::StreamName.stream_name(account_id, 'account')
+stream_name = Messaging::StreamName.stream_name(account_id, "account")
 
 batch = [opened, deposited, withdrawn]
 

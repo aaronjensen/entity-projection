@@ -1,4 +1,4 @@
-require_relative '../../automated_init'
+require_relative "../../automated_init"
 
 context "Apply" do
   context "Apply Method" do
@@ -11,7 +11,7 @@ context "Apply" do
         EntityProjection::Controls::Projection::ApplyMethod::Message::Example.(entity, message)
 
         test "Event data is projected" do
-          assert(entity.some_attribute == 'some value')
+          assert(entity.some_attribute == "some value")
         end
       end
 
